@@ -130,6 +130,7 @@ namespace Business
             this.buttonRunner.TabIndex = 8;
             this.buttonRunner.Text = "Бегун";
             this.buttonRunner.UseVisualStyleBackColor = false;
+            this.buttonRunner.Click += new System.EventHandler(this.buttonRunner_Click);
             // 
             // Vibor
             // 

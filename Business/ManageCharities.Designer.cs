@@ -31,6 +31,7 @@ namespace Business
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@ namespace Business
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +55,15 @@ namespace Business
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(802, 42);
             this.panel2.TabIndex = 10;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(375, 14);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel1.TabIndex = 78;
+            this.metroLabel1.Text = "metroLabel1";
             // 
             // label1
             // 
@@ -87,6 +96,7 @@ namespace Business
             this.buttonClose.TabIndex = 65;
             this.buttonClose.Text = "Назад";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // label2
             // 
@@ -109,6 +119,7 @@ namespace Business
             this.buttonSave.TabIndex = 76;
             this.buttonSave.Text = "+ Добавить нового";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // listViewORG
             // 
@@ -146,15 +157,6 @@ namespace Business
             // 
             this.columnHeader4.Text = "Изменить";
             this.columnHeader4.Width = 94;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(375, 14);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
-            this.metroLabel1.TabIndex = 78;
-            this.metroLabel1.Text = "metroLabel1";
             // 
             // ManageCharities
             // 

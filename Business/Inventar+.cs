@@ -30,5 +30,12 @@ namespace Business
         {
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
     }
 }

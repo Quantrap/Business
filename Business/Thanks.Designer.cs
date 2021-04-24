@@ -131,6 +131,7 @@ namespace Business
             this.labelCost.Size = new System.Drawing.Size(49, 29);
             this.labelCost.TabIndex = 25;
             this.labelCost.Text = "50$";
+            this.labelCost.Click += new System.EventHandler(this.labelCost_Click);
             // 
             // button1
             // 

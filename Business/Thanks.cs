@@ -20,7 +20,7 @@ namespace Business
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             timer1.Start();
-
+            labelCost.Text=Reg.users.money ;
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -73,6 +73,11 @@ namespace Business
             Form form = new Main();
             form.Show();
             this.Hide();
+        }
+
+        private void labelCost_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -89,6 +89,7 @@ namespace Business
             this.buttonLogout.TabIndex = 23;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // label1
             // 
@@ -170,6 +171,7 @@ namespace Business
             this.buttonZagVolonteer.TabIndex = 65;
             this.buttonZagVolonteer.Text = "Загрузка волонтера";
             this.buttonZagVolonteer.UseVisualStyleBackColor = true;
+            this.buttonZagVolonteer.Click += new System.EventHandler(this.buttonZagVolonteer_Click);
             // 
             // buttonRefresh
             // 

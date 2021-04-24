@@ -30,5 +30,19 @@ namespace Business
         {
             this.Hide();
         }
+
+        private void buttonPostuplenie_Click(object sender, EventArgs e)
+        {
+            Form form = new Inventar_();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
     }
 }

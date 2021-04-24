@@ -30,5 +30,19 @@ namespace Business
         {
 
         }
+
+        private void buttonZagVolonteer_Click(object sender, EventArgs e)
+        {
+            Form form = new VolunteerManagement();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
     }
 }

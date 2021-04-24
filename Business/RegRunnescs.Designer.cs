@@ -34,11 +34,11 @@ namespace Business
             this.buttonClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.buttonFirst = new System.Windows.Forms.Button();
             this.buttonSecond = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +84,15 @@ namespace Business
             this.panel2.Size = new System.Drawing.Size(802, 42);
             this.panel2.TabIndex = 10;
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(345, 16);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel1.TabIndex = 19;
+            this.metroLabel1.Text = "metroLabel1";
+            // 
             // buttonFirst
             // 
             this.buttonFirst.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -94,6 +103,7 @@ namespace Business
             this.buttonFirst.TabIndex = 16;
             this.buttonFirst.Text = "Я участвовал ранее";
             this.buttonFirst.UseVisualStyleBackColor = true;
+            this.buttonFirst.Click += new System.EventHandler(this.buttonFirst_Click);
             // 
             // buttonSecond
             // 
@@ -105,6 +115,7 @@ namespace Business
             this.buttonSecond.TabIndex = 17;
             this.buttonSecond.Text = "Я новый участник";
             this.buttonSecond.UseVisualStyleBackColor = true;
+            this.buttonSecond.Click += new System.EventHandler(this.buttonSecond_Click);
             // 
             // button4
             // 
@@ -117,15 +128,6 @@ namespace Business
             this.button4.TabIndex = 18;
             this.button4.Text = "Login";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(345, 16);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
-            this.metroLabel1.TabIndex = 19;
-            this.metroLabel1.Text = "metroLabel1";
             // 
             // RegRunnescs
             // 

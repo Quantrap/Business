@@ -31,5 +31,19 @@ namespace Business
         {
             this.Hide();
         }
+
+        private void buttonFirst_Click(object sender, EventArgs e)
+        {
+            Form form = new Reg();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonSecond_Click(object sender, EventArgs e)
+        {
+            Form form = new RegistrationRunners2();
+            form.Show();
+            this.Hide();
+        }
     }
 }

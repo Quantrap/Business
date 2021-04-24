@@ -37,6 +37,7 @@ namespace Business
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonOpen = new System.Windows.Forms.Button();
             this.textBoxPhoto = new System.Windows.Forms.TextBox();
@@ -47,7 +48,7 @@ namespace Business
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +64,7 @@ namespace Business
             this.buttonLogout.TabIndex = 21;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // label1
             // 
@@ -85,6 +87,7 @@ namespace Business
             this.buttonCancel.TabIndex = 66;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonSave
             // 
@@ -118,6 +121,7 @@ namespace Business
             this.buttonClose.TabIndex = 22;
             this.buttonClose.Text = "Назад";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // panel2
             // 
@@ -127,6 +131,15 @@ namespace Business
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(802, 42);
             this.panel2.TabIndex = 63;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(369, 16);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel1.TabIndex = 76;
+            this.metroLabel1.Text = "metroLabel1";
             // 
             // label3
             // 
@@ -149,6 +162,7 @@ namespace Business
             this.buttonOpen.TabIndex = 74;
             this.buttonOpen.Text = "Просмотр...";
             this.buttonOpen.UseVisualStyleBackColor = true;
+            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
             // textBoxPhoto
             // 
@@ -218,14 +232,9 @@ namespace Business
             this.label2.Text = "Добавление/Редактирование\r\nблаготворительных организаций";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // metroLabel1
+            // openFileDialog1
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(369, 16);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
-            this.metroLabel1.TabIndex = 76;
-            this.metroLabel1.Text = "metroLabel1";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // AddEdit_charity
             // 
@@ -276,5 +285,6 @@ namespace Business
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Timer timer1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

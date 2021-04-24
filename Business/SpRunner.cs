@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace Business
 {
+
     public partial class SpRunner : Form
     {
-        public string Cost,Found;
 
+        public ClassG g = new ClassG();
         TimeSpan d = new TimeSpan();
         DateTime date = new DateTime(2021, 1, 1);
         public SpRunner()
@@ -60,18 +61,26 @@ namespace Business
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
-            if (textBoxCart.Text.Length==16 && textBoxUrName.Text.Length>4 && textBoxUrName.Text.Length > 4 && 
-                Convert.ToInt32(DateTime.Now.Year)>=Convert.ToInt32(textBoxTime2.Text))
-            { 
-                if(Convert.ToInt32(DateTime.Now.Month) >= Convert.ToInt32(textBoxTime1.Text))
-                {
 
+            if (textBoxCart.Text.Length == 16 && textBoxUrName.Text.Length > 4 && textBoxUrName.Text.Length > 4 &&
+                Convert.ToInt32(DateTime.Now.Year) >= Convert.ToInt32(textBoxTime2.Text))
+            {
+                if (Convert.ToInt32(DateTime.Now.Month) >= Convert.ToInt32(textBoxTime1.Text))
+                {
+                    Sponsorship sponsorship = new Sponsorship();
+                    sponsorship.Amount = Convert.ToInt32(textBoxMoney.Text);
+                    sponsorship.SponsorName = textBoxUrName.Text;
+                    sponsorship.RegistrationId = Convert.ToInt32(comboBoxRunner.SelectedIndex.ToString().Split(' ')[3]);
+                    Program.m.Sponsorship.Add(sponsorship);
+                    Program.m.SaveChanges();
                 }
             }
+            
+            else return;
+            Reg.users.money = textBoxMoney.Text;
             Form formThanks = new Thanks();
             formThanks.Show();
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,11 +111,13 @@ namespace Business
             {
                 labelPrice.Text = "$" + Convert.ToString(Convert.ToInt32(labelPrice.Text.Substring(1, labelPrice.Text.Length - 1)) - 10);
                 textBoxMoney.Text = labelPrice.Text.Substring(1, labelPrice.Text.Length - 1);
+                g.Cost = labelPrice.Text.Substring(1, labelPrice.Text.Length - 1);
             }
             else
             {
                 labelPrice.Text = "$10";
                 textBoxMoney.Text = "10";
+                g.Cost = "10";
             }
         }
 
@@ -114,6 +125,7 @@ namespace Business
         {
             labelPrice.Text = "$" + Convert.ToString(Convert.ToInt32(labelPrice.Text.Substring(1, labelPrice.Text.Length - 1)) + 10);
             textBoxMoney.Text = labelPrice.Text.Substring(1, labelPrice.Text.Length - 1);
+            g.Cost = labelPrice.Text.Substring(1, labelPrice.Text.Length - 1);
         }
 
         private void textBoxMoney_TextChanged(object sender, EventArgs e)
@@ -124,7 +136,7 @@ namespace Business
                 if (Convert.ToInt32(textBoxMoney.Text) > 0)
                 {
                     labelPrice.Text = "$" + textBoxMoney.Text;
-
+                    g.Cost = labelPrice.Text.Substring(1, labelPrice.Text.Length - 1);
                 }
             }
         }
@@ -133,9 +145,11 @@ namespace Business
             comboBoxRunner.Items.Clear();
             foreach (Runner runner in Program.m.Runner)
             {
-                string[] item = { runner.User.FirstName + " ", runner.User.LastName + "- ",runner.RunnerId.ToString() + " ","("+runner.Country.CountryName+")" };
+                string[] item = { runner.User.FirstName + " ", runner.User.LastName + "- ", runner.RunnerId.ToString() + " ", "(" + runner.Country.CountryName + ")" };
                 comboBoxRunner.Items.Add(string.Join(" ", item));
             }
         }
+
+
     }
 }

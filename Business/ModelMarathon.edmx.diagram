@@ -22,7 +22,7 @@
         <EntityTypeShape EntityType="MarathonModel.Staff" Width="1.5" PointX="11" PointY="9" IsExpanded="true" />
         <EntityTypeShape EntityType="MarathonModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MarathonModel.Timesheet" Width="1.5" PointX="13.25" PointY="9.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MarathonModel.User" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarathonModel.User" Width="1.5" PointX="1.625" PointY="7.625" IsExpanded="true" />
         <EntityTypeShape EntityType="MarathonModel.Volunteer" Width="1.5" PointX="6" PointY="4" IsExpanded="true" />
         <AssociationConnector Association="MarathonModel.FK__Registrat__Chari__34C8D9D1" ManuallyRouted="false" />
         <AssociationConnector Association="MarathonModel.FK__Runner__CountryC__2E1BDC42" ManuallyRouted="false" />

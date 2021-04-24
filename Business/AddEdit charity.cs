@@ -36,5 +36,36 @@ namespace Business
         {
 
         }
+
+        private void buttonOpen_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter="png files (*.png)|*.png|All files (*.*)|*.*";
+            openFileDialog1.ShowDialog();
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBoxPhoto.Text = openFileDialog1.FileName;
+            }
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            Form form = new ManageCharities();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Form form = new AdmMenu();
+            form.Show();
+            this.Hide();
+        }
     }
 }

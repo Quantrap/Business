@@ -35,13 +35,13 @@ namespace Business
             this.buttonLogout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +67,7 @@ namespace Business
             this.buttonClose.TabIndex = 24;
             this.buttonClose.Text = "Назад";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonLogout
             // 
@@ -79,6 +80,7 @@ namespace Business
             this.buttonLogout.TabIndex = 23;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // label1
             // 
@@ -99,6 +101,15 @@ namespace Business
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(802, 42);
             this.panel2.TabIndex = 19;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(361, 16);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel1.TabIndex = 27;
+            this.metroLabel1.Text = "metroLabel1";
             // 
             // label4
             // 
@@ -132,6 +143,7 @@ namespace Business
             this.button2.TabIndex = 22;
             this.button2.Text = "Пользователи";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -143,6 +155,7 @@ namespace Business
             this.button5.TabIndex = 26;
             this.button5.Text = "Инвентарь";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -154,15 +167,7 @@ namespace Business
             this.button6.TabIndex = 25;
             this.button6.Text = "Благотворительные организации";
             this.button6.UseVisualStyleBackColor = true;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(361, 16);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
-            this.metroLabel1.TabIndex = 27;
-            this.metroLabel1.Text = "metroLabel1";
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // AdmMenu
             // 

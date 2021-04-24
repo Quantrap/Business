@@ -26,5 +26,19 @@ namespace Business
             d = date - DateTime.Now;
             metroLabel1.Text = "До начала марафона осталось: " + d.Days + " д. " + d.Hours + " ч. " + d.Minutes + " мин. " + d.Seconds + " с. ";
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Form form = new AdmMenu();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            Form form = new AddEdit_charity();
+            form.Show();
+            this.Hide();
+        }
     }
 }

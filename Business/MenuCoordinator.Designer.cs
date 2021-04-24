@@ -35,11 +35,11 @@ namespace Business
             this.label1 = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +98,15 @@ namespace Business
             this.panel2.Size = new System.Drawing.Size(802, 42);
             this.panel2.TabIndex = 12;
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(353, 16);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel1.TabIndex = 20;
+            this.metroLabel1.Text = "metroLabel1";
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -108,6 +117,7 @@ namespace Business
             this.button2.TabIndex = 17;
             this.button2.Text = "Бегуны";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -130,15 +140,6 @@ namespace Business
             this.label4.Size = new System.Drawing.Size(181, 23);
             this.label4.TabIndex = 19;
             this.label4.Text = "Меню координатора";
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(353, 16);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
-            this.metroLabel1.TabIndex = 20;
-            this.metroLabel1.Text = "metroLabel1";
             // 
             // MenuCoordinator
             // 

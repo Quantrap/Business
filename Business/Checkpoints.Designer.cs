@@ -118,7 +118,7 @@ namespace Business
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Checkpoints";
             this.Text = "Checkpoints";
             this.Load += new System.EventHandler(this.Checkpoints_Load);

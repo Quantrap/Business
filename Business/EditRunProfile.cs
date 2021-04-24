@@ -61,5 +61,19 @@ namespace Business
         {
 
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Form form = new MySponsors();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
     }
 }

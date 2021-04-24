@@ -35,6 +35,7 @@ namespace Business
             this.label1 = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxPhoto = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,7 +62,6 @@ namespace Business
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,6 +89,7 @@ namespace Business
             this.buttonClose.TabIndex = 64;
             this.buttonClose.Text = "Назад";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // label1
             // 
@@ -113,6 +114,7 @@ namespace Business
             this.buttonLogout.TabIndex = 63;
             this.buttonLogout.Text = "Logout";
             this.buttonLogout.UseVisualStyleBackColor = false;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
             // panel2
             // 
@@ -123,6 +125,15 @@ namespace Business
             this.panel2.Size = new System.Drawing.Size(802, 42);
             this.panel2.TabIndex = 27;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(361, 16);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel1.TabIndex = 78;
+            this.metroLabel1.Text = "metroLabel1";
             // 
             // label2
             // 
@@ -362,15 +373,6 @@ namespace Business
             this.buttonSave.TabIndex = 75;
             this.buttonSave.Text = "Сохранить";
             this.buttonSave.UseVisualStyleBackColor = true;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(361, 16);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(81, 19);
-            this.metroLabel1.TabIndex = 78;
-            this.metroLabel1.Text = "metroLabel1";
             // 
             // EditRunProfile
             // 

@@ -17,7 +17,6 @@ namespace Business
         public ContactsRunners()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             timer1.Start();
         }

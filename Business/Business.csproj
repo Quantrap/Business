@@ -91,6 +91,7 @@
     <Compile Include="Checkpoints.Designer.cs">
       <DependentUpon>Checkpoints.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="ContactsRunners.cs">
       <SubType>Form</SubType>
     </Compile>

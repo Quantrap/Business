@@ -6,8 +6,10 @@ using System.Windows.Forms;
 
 namespace Business
 {
+    
     static class Program
     {
+        
         public static MarathonEntities m = new MarathonEntities();
         /// <summary>
         /// Главная точка входа для приложения.

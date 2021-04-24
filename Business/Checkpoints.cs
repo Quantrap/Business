@@ -17,7 +17,7 @@ namespace Business
         {
             InitializeComponent();
             number = num;
-            this.FormBorderStyle = FormBorderStyle.None;
+            
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             StartPosition = FormStartPosition.Manual;

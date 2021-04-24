@@ -30,5 +30,19 @@ namespace Business
         {
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Form form = new Runs();
+            form.Show();
+            this.Hide();
+        }
     }
 }

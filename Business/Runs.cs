@@ -36,5 +36,40 @@ namespace Business
             Form formContact = new ContactsRunners();
             formContact.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form = new Registration_on_event();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form form = new EditRunProfile();
+            form.Show();
+            this.Hide();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form form = new Main();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form form = new MyRaceResults();
+            form.Show();
+            this.Hide();
+        }
     }
 }
